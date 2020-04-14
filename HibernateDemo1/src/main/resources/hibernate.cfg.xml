@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    
+    	<!-- Data Base Connection Property : Driver,URL,UserName,Password -->
+    	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    	<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+    	<property name="hibernate.connection.username">root</property>
+    	<property name="hibernate.connection.password">Root@123</property>
+    	
+    	<!-- Connection Pool Size -->
+    	<property name="hibernate.connection.pool_size">1</property>
+    	
+    	<!-- Output SQL Query -->
+    	<property name="hibernate.show_sql">true</property> 
+    	
+    	<!-- Dialect to Define DataBase -->
+    	<property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property> 
+    	
+    	<!-- CurrentSessionContext class configuration -->
+    	<property name="hibernate.current_session_context_class">
+    		org.hibernate.context.internal.ThreadLocalSessionContext
+    	</property>
+    	
+    	<!-- Mapping file  -->
+    	<mapping resource="Userdetail.hbm.xml" />
+    
+    </session-factory>
+</hibernate-configuration>
