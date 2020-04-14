@@ -1,0 +1,13 @@
+2020-04-14 10:25:12,309 [main] DEBUG org.hibernate.SQL -create table Emp (employe_id integer not null auto_increment, date_of_join datetime(6), email varchar(255), employe_name varchar(100) not null, salary double precision, primary key (employe_id)) engine=InnoDB
+2020-04-14 10:25:12,670 [main] DEBUG org.hibernate.SQL -alter table Emp drop index UK_2te53njox5wuocwt90wgo48vc
+2020-04-14 10:25:12,675 [main] DEBUG org.hibernate.SQL -alter table Emp add constraint UK_2te53njox5wuocwt90wgo48vc unique (email)
+2020-04-14 10:26:20,865 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 10:26:20,881 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 10:26:20 IST 2020]
+2020-04-14 10:26:20,884 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 10:26:20,885 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 10:26:20,886 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 14:32:21,379 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 14:32:21,398 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 14:32:21 IST 2020]
+2020-04-14 14:32:21,403 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 14:32:21,403 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 14:32:21,404 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]

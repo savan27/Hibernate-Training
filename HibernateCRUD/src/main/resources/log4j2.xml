@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<Appenders>
+	
+		<!-- Logger for console appender -->
+		<Console name="consoleAppender" target="SYSTEM_OUTS" >
+			<PatternLayout pattern="%d(yyyy-mm-dd hh:mm:ss a) [%t] %-5level %logger{36} -%msg%n" ></PatternLayout>
+		</Console>
+		
+		<!-- Logger For File Appender -->
+		<File name="fileAppender" fileName="/HibernateCRUD/logs/myapp.log" >
+			<PatternLayout pattern="%d(yyyy-mm-dd hh:mm:ss a) [%t] %-5level %logger{36} -%msg%n" ></PatternLayout>
+		</File>
+	
+	</Appenders>
+	
+	<Loggers>
+	
+		<!-- Logging Everything in Hibernate -->
+		<Logger name="org.hibernate" level="info" additivity="false" >
+			<AppenderRef ref="consoleAppender" ></AppenderRef>
+		</Logger>
+	
+		<!-- Logging to add SQL -->
+		<Logger name="org.hibernate.SQL" level="debug" additivity="false" >
+			<AppenderRef ref="consoleAppender" ></AppenderRef>
+			<AppenderRef ref="fileAppender" ></AppenderRef>
+		</Logger>
+		
+		<!-- Logging to add JDBC bind parameters -->
+		<Logger name="org.hibernate.type.descriptor.sql" level="trace" additivity="false" >
+			<AppenderRef ref="consoleAppender" ></AppenderRef>
+			<AppenderRef ref="fileAppender" ></AppenderRef>
+		</Logger>
+		
+		<!-- Logging for custompackage -->
+		<Logger name="com.savan.main" level="debug" additivity="false" >
+			<AppenderRef ref="consoleAppender" ></AppenderRef>
+			<AppenderRef ref="fileAppender" ></AppenderRef>
+		</Logger>
+		
+		<Root level="error" >
+			<AppenderRef ref="consoleAppender" ></AppenderRef>
+			<AppenderRef ref="fileAppender" ></AppenderRef>
+		</Root> 
+		
+	</Loggers>
+	
+</configuration>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+	<class name="com.savan.model.Item" table="item" >
+	
+		<id name="id" type="long" column="item_id" >
+			<generator class="identity"></generator>
+		</id>
+		
+		<property name="description" type="string" column="	item_desc"></property>
+		<property name="price" type="double" column="item_price" ></property>
+	
+		<set name="carts" table="cart_items" fetch="select" cascade="all">
+			<key column="item_id"></key>
+			<many-to-many class="com.savan.model.Cart" column="cart_id" ></many-to-many>
+		</set>
+	
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,286 @@
+2020-04-14 10:25:12,309 [main] DEBUG org.hibernate.SQL -create table Emp (employe_id integer not null auto_increment, date_of_join datetime(6), email varchar(255), employe_name varchar(100) not null, salary double precision, primary key (employe_id)) engine=InnoDB
+2020-04-14 10:25:12,670 [main] DEBUG org.hibernate.SQL -alter table Emp drop index UK_2te53njox5wuocwt90wgo48vc
+2020-04-14 10:25:12,675 [main] DEBUG org.hibernate.SQL -alter table Emp add constraint UK_2te53njox5wuocwt90wgo48vc unique (email)
+2020-04-14 10:26:20,865 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 10:26:20,881 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 10:26:20 IST 2020]
+2020-04-14 10:26:20,884 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 10:26:20,885 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 10:26:20,886 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 12:00:22,559 [main] DEBUG org.hibernate.SQL -alter table Emp add column city varchar(255)
+2020-04-14 12:00:23,462 [main] DEBUG org.hibernate.SQL -alter table Emp add column country varchar(255)
+2020-04-14 12:00:24,326 [main] DEBUG org.hibernate.SQL -alter table Emp add column street varchar(255)
+2020-04-14 12:00:25,118 [main] DEBUG org.hibernate.SQL -alter table Emp add column stste varchar(255)
+2020-04-14 12:00:26,106 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, city, country, street, stste, email, employe_name, salary) values (?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-14 12:00:26,119 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 12:00:26 IST 2020]
+2020-04-14 12:00:26,121 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:00:26,122 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:00:26,122 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 12:00:26,122 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 12:00:26,123 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 12:00:26,123 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [savan]
+2020-04-14 12:00:26,123 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [8] as [DOUBLE] - [100000.0]
+2020-04-14 12:01:07,664 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, city, country, street, stste, email, employe_name, salary) values (?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-14 12:01:07,688 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 12:01:07 IST 2020]
+2020-04-14 12:01:07,692 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:01:07,692 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:01:07,693 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 12:01:07,693 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 12:01:07,693 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 12:01:07,694 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [savan]
+2020-04-14 12:01:07,695 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [8] as [DOUBLE] - [100000.0]
+2020-04-14 12:01:27,212 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, city, country, street, stste, email, employe_name, salary) values (?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-14 12:01:27,236 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 12:01:27 IST 2020]
+2020-04-14 12:01:27,240 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:01:27,241 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:01:27,241 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 12:01:27,242 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 12:01:27,242 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 12:01:27,243 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [savan]
+2020-04-14 12:01:27,244 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [8] as [DOUBLE] - [100000.0]
+2020-04-14 12:01:47,748 [main] DEBUG org.hibernate.SQL -drop table if exists Emp
+2020-04-14 12:01:48,165 [main] DEBUG org.hibernate.SQL -create table Emp (employe_id integer not null auto_increment, date_of_join datetime(6), city varchar(255), country varchar(255), street varchar(255), stste varchar(255), email varchar(255), employe_name varchar(100) not null, salary double precision, primary key (employe_id)) engine=InnoDB
+2020-04-14 12:01:48,607 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, city, country, street, stste, email, employe_name, salary) values (?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-14 12:01:48,618 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 12:01:48 IST 2020]
+2020-04-14 12:01:48,622 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:01:48,622 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:01:48,623 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 12:01:48,623 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 12:01:48,623 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 12:01:48,623 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [savan]
+2020-04-14 12:01:48,624 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [8] as [DOUBLE] - [100000.0]
+2020-04-14 12:02:13,589 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, city, country, street, stste, email, employe_name, salary) values (?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-14 12:02:13,613 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 12:02:13 IST 2020]
+2020-04-14 12:02:13,619 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:02:13,620 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:02:13,620 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 12:02:13,621 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 12:02:13,621 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 12:02:13,621 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [savan]
+2020-04-14 12:02:13,622 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [8] as [DOUBLE] - [100000.0]
+2020-04-14 12:22:08,425 [main] ERROR com.savan.utility.HibernateUtil -Initial SessionFactory creation failed.org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [EmployeeModel_address]
+2020-04-14 12:22:43,552 [main] DEBUG org.hibernate.SQL -create table EmployeeModel_address (EmployeeModel_employe_id integer not null, city varchar(255), country varchar(255), street varchar(255), stste varchar(255)) engine=InnoDB
+2020-04-14 12:22:43,904 [main] DEBUG org.hibernate.SQL -alter table EmployeeModel_address add constraint FKj4iq4oolqsxu5862dh5k3xiym foreign key (EmployeeModel_employe_id) references Emp (employe_id)
+2020-04-14 12:22:44,853 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 12:22:44,865 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 12:22:44 IST 2020]
+2020-04-14 12:22:44,870 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 12:22:44,870 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 12:22:44,871 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 12:22:44,897 [main] DEBUG org.hibernate.SQL -insert into EmployeeModel_address (EmployeeModel_employe_id, city, country, street, stste) values (?, ?, ?, ?, ?)
+2020-04-14 12:22:44,899 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [3]
+2020-04-14 12:22:44,899 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:22:44,900 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:22:44,900 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 12:22:44,900 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 12:22:44,903 [main] DEBUG org.hibernate.SQL -insert into EmployeeModel_address (EmployeeModel_employe_id, city, country, street, stste) values (?, ?, ?, ?, ?)
+2020-04-14 12:22:44,904 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [3]
+2020-04-14 12:22:44,904 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:22:44,904 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:22:44,905 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [vandematram febula]
+2020-04-14 12:22:44,905 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 12:54:03,590 [main] DEBUG org.hibernate.SQL -create table Address_table (employee_id integer not null, city varchar(255), country varchar(255), street varchar(255), stste varchar(255)) engine=InnoDB
+2020-04-14 12:54:03,921 [main] DEBUG org.hibernate.SQL -alter table Address_table add constraint FK4ftl7pxa1mr9v0duxkwmtayoj foreign key (employee_id) references Emp (employe_id)
+2020-04-14 12:54:04,847 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 12:54:04,862 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 12:54:04 IST 2020]
+2020-04-14 12:54:04,866 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 12:54:04,867 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 12:54:04,868 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 12:54:04,901 [main] DEBUG org.hibernate.SQL -insert into Address_table (employee_id, city, country, street, stste) values (?, ?, ?, ?, ?)
+2020-04-14 12:54:04,903 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [4]
+2020-04-14 12:54:04,903 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:54:04,903 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:54:04,903 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 12:54:04,903 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 12:54:04,941 [main] DEBUG org.hibernate.SQL -insert into Address_table (employee_id, city, country, street, stste) values (?, ?, ?, ?, ?)
+2020-04-14 12:54:04,942 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [4]
+2020-04-14 12:54:04,943 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 12:54:04,943 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 12:54:04,943 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [vandematram febula]
+2020-04-14 12:54:04,944 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 14:31:28,387 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 14:31:28,403 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 14:31:28 IST 2020]
+2020-04-14 14:31:28,407 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 14:31:28,408 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 14:31:28,409 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 14:31:28,440 [main] DEBUG org.hibernate.SQL -insert into Address_table (employee_id, city, country, street, stste) values (?, ?, ?, ?, ?)
+2020-04-14 14:31:28,442 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [7]
+2020-04-14 14:31:28,442 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 14:31:28,442 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 14:31:28,443 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 14:31:28,443 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 14:31:58,683 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 14:31:58,700 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 14:31:58 IST 2020]
+2020-04-14 14:31:58,704 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 14:31:58,704 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 14:31:58,706 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 14:31:58,728 [main] DEBUG org.hibernate.SQL -insert into Address_table (employee_id, city, country, street, stste) values (?, ?, ?, ?, ?)
+2020-04-14 14:31:58,729 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [9]
+2020-04-14 14:31:58,730 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 14:31:58,730 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 14:31:58,730 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 14:31:58,731 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 14:33:09,637 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 14:33:09,658 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 14:33:09 IST 2020]
+2020-04-14 14:33:09,662 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 14:33:09,663 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 14:33:09,664 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 14:33:09,690 [main] DEBUG org.hibernate.SQL -insert into Address_table (employee_id, city, country, street, stste) values (?, ?, ?, ?, ?)
+2020-04-14 14:33:09,692 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [12]
+2020-04-14 14:33:09,692 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ahmedabad]
+2020-04-14 14:33:09,692 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [India]
+2020-04-14 14:33:09,693 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [scince city road]
+2020-04-14 14:33:09,693 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [VARCHAR] - [Gujarat]
+2020-04-14 14:47:34,267 [main] DEBUG org.hibernate.SQL -create table Address_table (employee_id integer not null, city varchar(255), country varchar(255), street varchar(255), stste varchar(255), address_id integer not null, primary key (address_id)) engine=InnoDB
+2020-04-14 14:47:34,617 [main] DEBUG org.hibernate.SQL -create table Emp (employe_id integer not null auto_increment, date_of_join datetime(6), email varchar(255), employe_name varchar(100) not null, salary double precision, primary key (employe_id)) engine=InnoDB
+2020-04-14 14:47:34,978 [main] DEBUG org.hibernate.SQL -create table sequence-gen (next_val bigint) engine=InnoDB
+2020-04-14 14:47:34,989 [main] DEBUG org.hibernate.SQL -insert into sequence-gen values ( 1 )
+2020-04-14 14:47:34,992 [main] DEBUG org.hibernate.SQL -alter table Address_table add constraint FK4ftl7pxa1mr9v0duxkwmtayoj foreign key (employee_id) references Emp (employe_id)
+2020-04-14 14:47:35,845 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 14:47:35,857 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 14:47:35 IST 2020]
+2020-04-14 14:47:35,859 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 14:47:35,860 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 14:47:35,860 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 14:47:35,904 [main] DEBUG org.hibernate.SQL -select next_val as id_val from sequence-gen for update
+2020-04-14 14:48:35,088 [main] ERROR com.savan.utility.HibernateUtil -Initial SessionFactory creation failed.org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [sequence-gen]
+2020-04-14 14:49:12,190 [main] DEBUG org.hibernate.SQL -alter table Address_table drop foreign key FK4ftl7pxa1mr9v0duxkwmtayoj
+2020-04-14 14:49:12,219 [main] DEBUG org.hibernate.SQL -drop table if exists Address_table
+2020-04-14 14:49:12,223 [main] DEBUG org.hibernate.SQL -drop table if exists Emp
+2020-04-14 14:49:12,233 [main] DEBUG org.hibernate.SQL -drop table if exists sequence-gen
+2020-04-14 14:49:12,243 [main] DEBUG org.hibernate.SQL -create table Address_table (employee_id integer not null, city varchar(255), country varchar(255), street varchar(255), stste varchar(255), address_id integer not null, primary key (address_id)) engine=InnoDB
+2020-04-14 14:49:12,543 [main] DEBUG org.hibernate.SQL -create table Emp (employe_id integer not null auto_increment, date_of_join datetime(6), email varchar(255), employe_name varchar(100) not null, salary double precision, primary key (employe_id)) engine=InnoDB
+2020-04-14 14:49:12,798 [main] DEBUG org.hibernate.SQL -create table sequence-gen (next_val bigint) engine=InnoDB
+2020-04-14 14:49:12,804 [main] DEBUG org.hibernate.SQL -insert into sequence-gen values ( 1 )
+2020-04-14 14:49:12,807 [main] DEBUG org.hibernate.SQL -alter table Address_table add constraint FK4ftl7pxa1mr9v0duxkwmtayoj foreign key (employee_id) references Emp (employe_id)
+2020-04-14 14:49:13,830 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 14:49:13,849 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 14:49:13 IST 2020]
+2020-04-14 14:49:13,853 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 14:49:13,853 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 14:49:13,854 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 14:49:13,901 [main] DEBUG org.hibernate.SQL -select next_val as id_val from sequence-gen for update
+2020-04-14 15:39:03,823 [main] ERROR com.savan.utility.HibernateUtil -Initial SessionFactory creation failed.org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.savan.Model.EmployeeModel.address references an unknown entity: com.savan.Model.Address
+2020-04-14 15:39:39,688 [main] DEBUG org.hibernate.SQL -create table address_table (address_id integer not null auto_increment, city varchar(255), country varchar(255), street varchar(255), stste varchar(255), primary key (address_id)) engine=InnoDB
+2020-04-14 15:39:39,991 [main] DEBUG org.hibernate.SQL -alter table Emp add column address_address_id integer
+2020-04-14 15:39:40,814 [main] DEBUG org.hibernate.SQL -alter table Emp add constraint FK737nsr31ayxh7gr6blb6ea8kc foreign key (address_address_id) references address_table (address_id)
+2020-04-14 15:39:41,754 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 15:39:41,765 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 15:39:41,766 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 15:39:41,766 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [scince city road]
+2020-04-14 15:39:41,766 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 15:39:41,774 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, address_address_id, email, employe_name, salary) values (?, ?, ?, ?, ?)
+2020-04-14 15:39:41,775 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 15:39:41 IST 2020]
+2020-04-14 15:39:41,778 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2020-04-14 15:39:41,779 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 15:39:41,779 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [savan]
+2020-04-14 15:39:41,779 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [DOUBLE] - [100000.0]
+2020-04-14 15:43:45,810 [main] DEBUG org.hibernate.SQL -alter table Emp add column address_id integer
+2020-04-14 15:43:46,713 [main] DEBUG org.hibernate.SQL -alter table Emp add constraint FKa8dvuaocsqldt4s9ldtnxasg7 foreign key (address_id) references address_table (address_id)
+2020-04-14 15:43:47,872 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 15:43:47,884 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 15:43:47,885 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 15:43:47,885 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [scince city road]
+2020-04-14 15:43:47,885 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 15:43:47,894 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, address_id, email, employe_name, salary) values (?, ?, ?, ?, ?)
+2020-04-14 15:43:47,896 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 15:43:47 IST 2020]
+2020-04-14 15:43:47,901 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [2]
+2020-04-14 15:43:47,901 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 15:43:47,902 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [savan]
+2020-04-14 15:43:47,903 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [DOUBLE] - [100000.0]
+2020-04-14 16:03:52,299 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 16:03:52,316 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 16:03:52,317 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 16:03:52,317 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [scince city road]
+2020-04-14 16:03:52,317 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 16:03:52,324 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, address_id, email, employe_name, salary) values (?, ?, ?, ?, ?)
+2020-04-14 16:03:52,325 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 16:03:52 IST 2020]
+2020-04-14 16:03:52,330 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [3]
+2020-04-14 16:03:52,330 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 16:03:52,330 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [savan]
+2020-04-14 16:03:52,331 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [DOUBLE] - [100000.0]
+2020-04-14 16:04:43,472 [main] DEBUG org.hibernate.SQL -alter table Emp drop foreign key FKa8dvuaocsqldt4s9ldtnxasg7
+2020-04-14 16:04:43,572 [main] DEBUG org.hibernate.SQL -drop table if exists address_table
+2020-04-14 16:04:43,670 [main] DEBUG org.hibernate.SQL -drop table if exists Emp
+2020-04-14 16:04:43,768 [main] DEBUG org.hibernate.SQL -create table address_table (address_id integer not null auto_increment, city varchar(255), country varchar(255), street varchar(255), stste varchar(255), primary key (address_id)) engine=InnoDB
+2020-04-14 16:04:43,876 [main] DEBUG org.hibernate.SQL -create table Emp (employe_id integer not null auto_increment, date_of_join datetime(6), email varchar(255), employe_name varchar(100) not null, salary double precision, address_id integer, primary key (employe_id)) engine=InnoDB
+2020-04-14 16:04:43,975 [main] DEBUG org.hibernate.SQL -alter table Emp add constraint FKa8dvuaocsqldt4s9ldtnxasg7 foreign key (address_id) references address_table (address_id)
+2020-04-14 16:04:45,373 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 16:04:45,385 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 16:04:45,388 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 16:04:45,388 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [scince city road]
+2020-04-14 16:04:45,389 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 16:04:45,393 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, address_id, email, employe_name, salary) values (?, ?, ?, ?, ?)
+2020-04-14 16:04:45,394 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 16:04:45 IST 2020]
+2020-04-14 16:04:45,399 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [4]
+2020-04-14 16:04:45,399 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 16:04:45,399 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [savan]
+2020-04-14 16:04:45,400 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [DOUBLE] - [100000.0]
+2020-04-14 16:05:31,812 [main] DEBUG org.hibernate.SQL -create table address_table (address_id integer not null auto_increment, city varchar(255), country varchar(255), street varchar(255), stste varchar(255), primary key (address_id)) engine=InnoDB
+2020-04-14 16:05:32,210 [main] DEBUG org.hibernate.SQL -create table Emp (employe_id integer not null auto_increment, date_of_join datetime(6), email varchar(255), employe_name varchar(100) not null, salary double precision, address_id integer, primary key (employe_id)) engine=InnoDB
+2020-04-14 16:05:32,573 [main] DEBUG org.hibernate.SQL -alter table Emp add constraint FKa8dvuaocsqldt4s9ldtnxasg7 foreign key (address_id) references address_table (address_id)
+2020-04-14 16:05:33,555 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 16:05:33,568 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 16:05:33,568 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 16:05:33,568 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [scince city road]
+2020-04-14 16:05:33,568 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 16:05:33,574 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, address_id, email, employe_name, salary) values (?, ?, ?, ?, ?)
+2020-04-14 16:05:33,575 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 16:05:33 IST 2020]
+2020-04-14 16:05:33,578 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2020-04-14 16:05:33,578 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 16:05:33,578 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [savan]
+2020-04-14 16:05:33,579 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [5] as [DOUBLE] - [100000.0]
+2020-04-14 16:14:01,964 [main] ERROR com.savan.utility.HibernateUtil -Initial SessionFactory creation failed.org.hibernate.AnnotationException: Referenced property not a (One|Many)ToOne: com.savan.Model.EmployeeModel.address in mappedBy of com.savan.Model.Address.employee
+2020-04-14 16:14:34,453 [main] ERROR com.savan.utility.HibernateUtil -Initial SessionFactory creation failed.org.hibernate.AnnotationException: Referenced property not a (One|Many)ToOne: com.savan.Model.EmployeeModel.address in mappedBy of com.savan.Model.Address.employee
+2020-04-14 16:16:41,301 [main] ERROR com.savan.utility.HibernateUtil -Initial SessionFactory creation failed.org.hibernate.AnnotationException: Referenced property not a (One|Many)ToOne: com.savan.Model.EmployeeModel.address in mappedBy of com.savan.Model.Address.employee
+2020-04-14 16:17:30,709 [main] ERROR com.savan.utility.HibernateUtil -Initial SessionFactory creation failed.org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: com.savan.Model.Address.employee
+2020-04-14 16:18:15,506 [main] DEBUG org.hibernate.SQL -create table address_table (address_id integer not null auto_increment, city varchar(255), country varchar(255), street varchar(255), stste varchar(255), primary key (address_id)) engine=InnoDB
+2020-04-14 16:18:15,825 [main] DEBUG org.hibernate.SQL -create table Emp (employe_id integer not null auto_increment, date_of_join datetime(6), email varchar(255), employe_name varchar(100) not null, salary double precision, primary key (employe_id)) engine=InnoDB
+2020-04-14 16:18:16,131 [main] DEBUG org.hibernate.SQL -create table Emp_address_table (EmployeeModel_employe_id integer not null, address_address_id integer not null) engine=InnoDB
+2020-04-14 16:18:16,488 [main] DEBUG org.hibernate.SQL -alter table Emp_address_table drop index UK_ov54c9b3mapwnxxkrhvadddxm
+2020-04-14 16:18:16,491 [main] DEBUG org.hibernate.SQL -alter table Emp_address_table add constraint UK_ov54c9b3mapwnxxkrhvadddxm unique (address_address_id)
+2020-04-14 16:18:17,038 [main] DEBUG org.hibernate.SQL -alter table Emp_address_table add constraint FKmxivrhyqt8ihf631qltgf4dan foreign key (address_address_id) references address_table (address_id)
+2020-04-14 16:18:17,881 [main] DEBUG org.hibernate.SQL -alter table Emp_address_table add constraint FK95a0oem3b8236wm1dc1vem7rv foreign key (EmployeeModel_employe_id) references Emp (employe_id)
+2020-04-14 16:18:18,828 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 16:18:18,839 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 16:18:18 IST 2020]
+2020-04-14 16:18:18,842 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 16:18:18,843 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 16:18:18,843 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 16:18:18,850 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 16:18:18,851 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 16:18:18,851 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 16:18:18,851 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [scince city road]
+2020-04-14 16:18:18,852 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 16:18:18,855 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 16:18:18,856 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 16:18:18,856 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 16:18:18,856 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [vandematram febula]
+2020-04-14 16:18:18,858 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 16:18:18,884 [main] DEBUG org.hibernate.SQL -insert into Emp_address_table (EmployeeModel_employe_id, address_address_id) values (?, ?)
+2020-04-14 16:18:18,886 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2020-04-14 16:18:18,886 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [1]
+2020-04-14 16:18:18,944 [main] DEBUG org.hibernate.SQL -insert into Emp_address_table (EmployeeModel_employe_id, address_address_id) values (?, ?)
+2020-04-14 16:18:18,945 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2020-04-14 16:18:18,945 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [2]
+2020-04-14 16:27:34,181 [main] DEBUG org.hibernate.SQL -create table Employe_address_table (employ_id integer not null, address_id integer not null) engine=InnoDB
+2020-04-14 16:27:34,511 [main] DEBUG org.hibernate.SQL -alter table Employe_address_table drop index UK_qqdepd43wumglixv29ebc07yl
+2020-04-14 16:27:34,514 [main] DEBUG org.hibernate.SQL -alter table Employe_address_table add constraint UK_qqdepd43wumglixv29ebc07yl unique (address_id)
+2020-04-14 16:27:35,024 [main] DEBUG org.hibernate.SQL -alter table Employe_address_table add constraint FKoui1scf02ivhp7rubch9j7b7p foreign key (address_id) references address_table (address_id)
+2020-04-14 16:27:35,692 [main] DEBUG org.hibernate.SQL -alter table Employe_address_table add constraint FK1uh3x19wl1dfl2wi0yejgpwxv foreign key (employ_id) references Emp (employe_id)
+2020-04-14 16:27:36,624 [main] DEBUG org.hibernate.SQL -insert into Emp (date_of_join, email, employe_name, salary) values (?, ?, ?, ?)
+2020-04-14 16:27:36,635 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [TIMESTAMP] - [Tue Apr 14 16:27:36 IST 2020]
+2020-04-14 16:27:36,638 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [sss@sss.ss]
+2020-04-14 16:27:36,639 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [savan]
+2020-04-14 16:27:36,640 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [DOUBLE] - [100000.0]
+2020-04-14 16:27:36,649 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 16:27:36,651 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 16:27:36,651 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 16:27:36,651 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [scince city road]
+2020-04-14 16:27:36,652 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 16:27:36,654 [main] DEBUG org.hibernate.SQL -insert into address_table (city, country, street, stste) values (?, ?, ?, ?)
+2020-04-14 16:27:36,655 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Ahmedabad]
+2020-04-14 16:27:36,655 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [India]
+2020-04-14 16:27:36,655 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [vandematram febula]
+2020-04-14 16:27:36,656 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [Gujarat]
+2020-04-14 16:27:36,682 [main] DEBUG org.hibernate.SQL -insert into Employe_address_table (employ_id, address_id) values (?, ?)
+2020-04-14 16:27:36,683 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [2]
+2020-04-14 16:27:36,684 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [3]
+2020-04-14 16:27:36,729 [main] DEBUG org.hibernate.SQL -insert into Employe_address_table (employ_id, address_id) values (?, ?)
+2020-04-14 16:27:36,729 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [2]
+2020-04-14 16:27:36,729 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [4]

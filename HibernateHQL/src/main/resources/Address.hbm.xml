@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.savan.moel.Address" table="Address">
+        <id name="id" type="long">
+            <column name="emp_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="addressLine1" type="java.lang.String">
+            <column name="address_line1" />
+        </property>
+        <property name="zipcode" type="java.lang.String">
+            <column name="zipcode" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="city" />
+        </property>
+        <one-to-one name="employe" class="com.savan.moel.Employe" constrained="true"></one-to-one>
+    </class>
+</hibernate-mapping>

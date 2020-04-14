@@ -1,0 +1,541 @@
+2020-Apr-13 12:44:29 PM [main] INFO  com.savan.main.CriteriaCRUD - Hibernate Configuration loded
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [1]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_name2_1_] : [VARCHAR]) - [Mike]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_sala3_1_] : [DOUBLE]) - [100.0]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [2]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_name2_1_] : [VARCHAR]) - [David]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_sala3_1_] : [DOUBLE]) - [150.0]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [3]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_name2_1_] : [VARCHAR]) - [Lisa]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_sala3_1_] : [DOUBLE]) - [300.0]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [4]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_name2_1_] : [VARCHAR]) - [Jack]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_sala3_1_] : [DOUBLE]) - [400.0]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 1
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : Mike
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 100.0
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 2
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : David
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 150.0
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 3
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : Lisa
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 300.0
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 4
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : Jack
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 400.0
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - update Employe set emp_salary=150 where emp_name=?
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [David]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Update Count :1
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - delete from Employe where emp_salary>400.0
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Update count of delete :0
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_ where employe0_.emp_name like ?
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%Dav%]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [2]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 2
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : David
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 150.0
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_ inner join Address address1_ on employe0_.emp_id=address1_.emp_id where employe0_.emp_name is not null
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [1]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [2]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [3]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [4]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Id      :1
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe name    :Mike
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe salary  :100.0
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select address0_.emp_id as emp_id1_0_0_, address0_.address_line1 as address_2_0_0_, address0_.zipcode as zipcode3_0_0_, address0_.city as city4_0_0_ from Address address0_ where address0_.emp_id=?
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([address_2_0_0_] : [VARCHAR]) - [Albany Dr]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([zipcode3_0_0_] : [VARCHAR]) - [95129]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([city4_0_0_] : [VARCHAR]) - [San Jose]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Address :Albany Dr
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe cirt    :San Jose
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe zipcode :95129
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Id      :2
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe name    :David
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe salary  :150.0
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select address0_.emp_id as emp_id1_0_0_, address0_.address_line1 as address_2_0_0_, address0_.zipcode as zipcode3_0_0_, address0_.city as city4_0_0_ from Address address0_ where address0_.emp_id=?
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([address_2_0_0_] : [VARCHAR]) - [Arques Ave]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([zipcode3_0_0_] : [VARCHAR]) - [95051]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([city4_0_0_] : [VARCHAR]) - [Santa Clara]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Address :Arques Ave
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe cirt    :Santa Clara
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe zipcode :95051
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Id      :3
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe name    :Lisa
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe salary  :300.0
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select address0_.emp_id as emp_id1_0_0_, address0_.address_line1 as address_2_0_0_, address0_.zipcode as zipcode3_0_0_, address0_.city as city4_0_0_ from Address address0_ where address0_.emp_id=?
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([address_2_0_0_] : [VARCHAR]) - [BTM 1st Stage]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([zipcode3_0_0_] : [VARCHAR]) - [560100]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([city4_0_0_] : [VARCHAR]) - [Bangalore]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Address :BTM 1st Stage
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe cirt    :Bangalore
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe zipcode :560100
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Id      :4
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe name    :Jack
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe salary  :400.0
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select address0_.emp_id as emp_id1_0_0_, address0_.address_line1 as address_2_0_0_, address0_.zipcode as zipcode3_0_0_, address0_.city as city4_0_0_ from Address address0_ where address0_.emp_id=?
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([address_2_0_0_] : [VARCHAR]) - [City Centre]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([zipcode3_0_0_] : [VARCHAR]) - [100100]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([city4_0_0_] : [VARCHAR]) - [New Delhi]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Address :City Centre
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe cirt    :New Delhi
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe zipcode :100100
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_ where employe0_.emp_salary>200.0 limit ?
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [3]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - EMployee Name :Lisa
+2020-Apr-13 12:44:32 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_ order by employe0_.emp_name asc
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [2]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [4]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [3]
+2020-Apr-13 12:44:32 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [1]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe [id=2, name=David, salary=150.0, address=com.savan.model.Address@30b131b2]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe [id=4, name=Jack, salary=400.0, address=com.savan.model.Address@6e0c6a7a]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe [id=3, name=Lisa, salary=300.0, address=com.savan.model.Address@5b5e7036]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe [id=1, name=Mike, salary=100.0, address=com.savan.model.Address@53e800f9]
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Success....
+2020-Apr-13 12:44:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Success....again....
+2020-Apr-13 12:45:32 PM [main] INFO  com.savan.main.CriteriaCRUD - Hibernate Configuration loded
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - -------------------------Select Query-------------------------
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [1]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_name2_1_] : [VARCHAR]) - [Mike]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_sala3_1_] : [DOUBLE]) - [100.0]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [2]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_name2_1_] : [VARCHAR]) - [David]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_sala3_1_] : [DOUBLE]) - [150.0]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [3]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_name2_1_] : [VARCHAR]) - [Lisa]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_sala3_1_] : [DOUBLE]) - [300.0]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [4]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_name2_1_] : [VARCHAR]) - [Jack]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_sala3_1_] : [DOUBLE]) - [400.0]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 1
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : Mike
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 100.0
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 2
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : David
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 150.0
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 3
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : Lisa
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 300.0
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 4
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : Jack
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 400.0
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - -------------------------Update Query-------------------------
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - update Employe set emp_salary=150 where emp_name=?
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [David]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Update Count :1
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - -------------------------Delete Query-------------------------
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - delete from Employe where emp_salary>400.0
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Update count of delete :0
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - -------------------------Where Cluse (like)-------------------------
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_ where employe0_.emp_name like ?
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [%Dav%]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [2]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Id     : 2
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee name   : David
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employee Salary : 150.0
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - -------------------------JOIN-------------------------
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_ inner join Address address1_ on employe0_.emp_id=address1_.emp_id where employe0_.emp_name is not null
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [1]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [2]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [3]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [4]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Id      :1
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe name    :Mike
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe salary  :100.0
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select address0_.emp_id as emp_id1_0_0_, address0_.address_line1 as address_2_0_0_, address0_.zipcode as zipcode3_0_0_, address0_.city as city4_0_0_ from Address address0_ where address0_.emp_id=?
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([address_2_0_0_] : [VARCHAR]) - [Albany Dr]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([zipcode3_0_0_] : [VARCHAR]) - [95129]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([city4_0_0_] : [VARCHAR]) - [San Jose]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Address :Albany Dr
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe cirt    :San Jose
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe zipcode :95129
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Id      :2
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe name    :David
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe salary  :150.0
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select address0_.emp_id as emp_id1_0_0_, address0_.address_line1 as address_2_0_0_, address0_.zipcode as zipcode3_0_0_, address0_.city as city4_0_0_ from Address address0_ where address0_.emp_id=?
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([address_2_0_0_] : [VARCHAR]) - [Arques Ave]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([zipcode3_0_0_] : [VARCHAR]) - [95051]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([city4_0_0_] : [VARCHAR]) - [Santa Clara]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Address :Arques Ave
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe cirt    :Santa Clara
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe zipcode :95051
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Id      :3
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe name    :Lisa
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe salary  :300.0
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select address0_.emp_id as emp_id1_0_0_, address0_.address_line1 as address_2_0_0_, address0_.zipcode as zipcode3_0_0_, address0_.city as city4_0_0_ from Address address0_ where address0_.emp_id=?
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [3]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([address_2_0_0_] : [VARCHAR]) - [BTM 1st Stage]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([zipcode3_0_0_] : [VARCHAR]) - [560100]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([city4_0_0_] : [VARCHAR]) - [Bangalore]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Address :BTM 1st Stage
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe cirt    :Bangalore
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe zipcode :560100
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Id      :4
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe name    :Jack
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe salary  :400.0
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select address0_.emp_id as emp_id1_0_0_, address0_.address_line1 as address_2_0_0_, address0_.zipcode as zipcode3_0_0_, address0_.city as city4_0_0_ from Address address0_ where address0_.emp_id=?
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([address_2_0_0_] : [VARCHAR]) - [City Centre]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([zipcode3_0_0_] : [VARCHAR]) - [100100]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([city4_0_0_] : [VARCHAR]) - [New Delhi]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe Address :City Centre
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe cirt    :New Delhi
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe zipcode :100100
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - -------------------------Single Result-------------------------
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_ where employe0_.emp_salary>200.0 limit ?
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [3]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - EMployee Name :Lisa
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - -------------------------OrderBy-------------------------
+2020-Apr-13 12:45:36 PM [main] DEBUG org.hibernate.SQL - select employe0_.emp_id as emp_id1_1_, employe0_.emp_name as emp_name2_1_, employe0_.emp_salary as emp_sala3_1_ from Employe employe0_ order by employe0_.emp_name asc
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [2]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [4]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [3]
+2020-Apr-13 12:45:36 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([emp_id1_1_] : [BIGINT]) - [1]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe [id=2, name=David, salary=150.0, address=com.savan.model.Address@30b131b2]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe [id=4, name=Jack, salary=400.0, address=com.savan.model.Address@6e0c6a7a]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe [id=3, name=Lisa, salary=300.0, address=com.savan.model.Address@5b5e7036]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Employe [id=1, name=Mike, salary=100.0, address=com.savan.model.Address@53e800f9]
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Success....
+2020-Apr-13 12:45:36 PM [main] INFO  com.savan.main.CriteriaCRUD - Success....again....
+2020-Apr-13 12:47:39 PM [main] DEBUG org.hibernate.SQL - select max(id) from userRegister
+2020-Apr-13 12:47:39 PM [main] DEBUG org.hibernate.SQL - insert into userRegister (first_name, last_name, id) values (?, ?, ?)
+2020-Apr-13 12:47:39 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Zara]
+2020-Apr-13 12:47:39 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Ali]
+2020-Apr-13 12:47:39 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [INTEGER] - [43]
+2020-Apr-13 12:47:39 PM [main] DEBUG org.hibernate.SQL - select max(id) from userRegister
+2020-Apr-13 12:47:39 PM [main] DEBUG org.hibernate.SQL - insert into userRegister (first_name, last_name, id) values (?, ?, ?)
+2020-Apr-13 12:47:39 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Daisy]
+2020-Apr-13 12:47:39 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Das]
+2020-Apr-13 12:47:39 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [INTEGER] - [44]
+2020-Apr-13 12:47:40 PM [main] DEBUG org.hibernate.SQL - select max(id) from userRegister
+2020-Apr-13 12:47:40 PM [main] DEBUG org.hibernate.SQL - insert into userRegister (first_name, last_name, id) values (?, ?, ?)
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [John]
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Paul]
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [INTEGER] - [45]
+2020-Apr-13 12:47:40 PM [main] DEBUG org.hibernate.SQL - select usermodel0_.id as id1_2_, usermodel0_.first_name as first_na2_2_, usermodel0_.last_name as last_nam3_2_ from userRegister usermodel0_
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [1]
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [savan]
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [vaishnav]
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [3]
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [zxc]
+2020-Apr-13 12:47:40 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [qwe]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [4]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Zara]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [5]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [6]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [7]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Zara]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [8]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [9]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [10]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Zara]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [11]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [12]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [13]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Zara]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [14]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [15]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [16]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [17]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [18]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [19]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Zara]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [20]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [21]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [22]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [23]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [24]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [25]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [26]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [27]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [28]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [29]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [30]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [31]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [32]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [33]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [34]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [35]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [36]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [37]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [38]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [39]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [40]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [41]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [42]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [43]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Zara]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [44]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [Daisy]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Das]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_2_] : [INTEGER]) - [45]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_] : [VARCHAR]) - [John]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_] : [VARCHAR]) - [Paul]
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 1
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : savan
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : vaishnav
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 3
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : zxc
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : qwe
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 4
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Zara
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 5
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 6
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 7
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Zara
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 8
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 9
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 10
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Zara
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 11
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 12
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 13
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Zara
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 14
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 15
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 16
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : opop
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 17
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 18
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 19
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Zara
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 20
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 21
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 22
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : opop
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 23
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 24
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 25
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : opop
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 26
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 27
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 28
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : opop
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 29
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 30
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 31
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : opop
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 32
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 33
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 34
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : opop
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 35
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 36
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 37
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : opop
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 38
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 39
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 40
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : opop
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 41
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 42
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 43
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Zara
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Ali
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 44
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : Daisy
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Das
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - User Id : 45
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - First Name : John
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - Last Name : Paul
+2020-Apr-13 12:47:41 PM [main] INFO  com.savan.main.CriteriaCRUD - 
+2020-Apr-13 12:47:41 PM [main] DEBUG org.hibernate.SQL - select usermodel0_.id as id1_2_0_, usermodel0_.first_name as first_na2_2_0_, usermodel0_.last_name as last_nam3_2_0_ from userRegister usermodel0_ where usermodel0_.id=?
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [43]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([first_na2_2_0_] : [VARCHAR]) - [Zara]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([last_nam3_2_0_] : [VARCHAR]) - [Ali]
+2020-Apr-13 12:47:41 PM [main] DEBUG org.hibernate.SQL - update userRegister set first_name=?, last_name=? where id=?
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [opop]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [Ali]
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [INTEGER] - [43]
+2020-Apr-13 12:47:41 PM [main] DEBUG org.hibernate.SQL - select usermodel0_.id as id1_2_0_, usermodel0_.first_name as first_na2_2_0_, usermodel0_.last_name as last_nam3_2_0_ from userRegister usermodel0_ where usermodel0_.id=?
+2020-Apr-13 12:47:41 PM [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]

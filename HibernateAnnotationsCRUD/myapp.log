@@ -1,0 +1,473 @@
+2020-04-13 16:44:36,228(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:44:36,547(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:44:36,809(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:44:36,820(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:44:36,903(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into userRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:44:36,907(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:44:36,907(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:44:36,908(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:45:18,399(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:45:18,648(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:45:18,662(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:45:18,961(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:45:19,006(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:45:19,514(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:45:19,526(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:45:19,600(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:45:19,604(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:45:19,604(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:45:19,605(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:45:19,775(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:45:19,952(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:45:20,132(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:45:20,500(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:45:20,557(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:45:20,836(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:45:20,838(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:45:20,880(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:45:20,882(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:45:20,883(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:45:20,884(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:45:21,028(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:45:21,168(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:45:21,348(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:45:21,672(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:45:21,717(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:45:22,091(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:45:22,098(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:45:22,574(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:45:22,574(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:45:22,575(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:45:22,575(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:45:22,619(yyyy-mm-dd hh:mm:ss a) [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:45:22,710(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:45:22,897(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:45:23,076(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:45:23,388(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:45:23,444(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:45:23,798(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_, usermodel0_.first_name as first_na2_0_, usermodel0_.last_name as last_nam3_0_ from UserRegister usermodel0_
+2020-04-13 16:45:23,902(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:45:24,046(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:45:24,203(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:45:24,549(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:45:24,594(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:45:25,101(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_0_, usermodel0_.first_name as first_na2_0_0_, usermodel0_.last_name as last_nam3_0_0_ from UserRegister usermodel0_ where usermodel0_.id=?
+2020-04-13 16:45:25,101(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1]
+2020-04-13 16:46:45,322(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:46:45,629(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:46:45,857(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:46:46,187(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:46:46,233(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:46:46,792(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:46:46,802(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:46:46,864(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:46:46,866(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:46:46,867(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:46:46,867(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:46:47,031(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:46:47,211(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:46:47,390(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:46:47,703(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:46:47,747(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:46:48,103(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:46:48,105(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:46:48,151(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:46:48,155(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:46:48,156(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:46:48,157(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:46:48,301(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:46:48,450(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:46:48,631(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:46:48,977(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:46:49,022(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:46:49,342(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:46:49,343(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:46:49,389(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:46:49,391(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:46:49,392(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:46:49,392(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:46:49,447(yyyy-mm-dd hh:mm:ss a) [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:52:35,077(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:52:35,370(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:52:35,555(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:52:35,960(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:52:36,006(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:52:36,500(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:52:36,512(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:52:36,583(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:52:36,586(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:52:36,586(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:52:36,587(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:52:36,812(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:52:36,953(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:52:37,111(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:52:37,425(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:52:37,514(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:52:37,873(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:52:37,874(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:52:37,927(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:52:37,928(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:52:37,928(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:52:37,928(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:52:38,071(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists hibernate_sequence
+2020-04-13 16:52:38,282(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -drop table if exists UserRegister
+2020-04-13 16:52:38,462(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table hibernate_sequence (next_val bigint) engine=InnoDB
+2020-04-13 16:52:38,797(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into hibernate_sequence values ( 1 )
+2020-04-13 16:52:38,843(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -create table UserRegister (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-04-13 16:52:39,189(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:52:39,189(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:52:39,233(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:52:39,234(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:52:39,234(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:52:39,235(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [1]
+2020-04-13 16:52:39,325(yyyy-mm-dd hh:mm:ss a) [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:53:06,423(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:53:06,449(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:53:06,530(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:53:06,536(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:53:06,536(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:53:06,537(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [2]
+2020-04-13 16:53:07,038(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:53:07,046(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:53:07,090(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:53:07,091(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:53:07,092(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:53:07,092(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [3]
+2020-04-13 16:53:07,334(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:53:07,335(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:53:07,380(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:53:07,382(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:53:07,382(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:53:07,383(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [4]
+2020-04-13 16:53:07,424(yyyy-mm-dd hh:mm:ss a) [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:56:40,430(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:56:40,452(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:56:40,537(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:56:40,541(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:56:40,542(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:56:40,544(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [5]
+2020-04-13 16:56:40,841(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:56:40,843(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:56:40,887(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:56:40,889(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:56:40,889(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:56:40,890(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [6]
+2020-04-13 16:56:41,163(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:56:41,164(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:56:41,209(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:56:41,209(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:56:41,210(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:56:41,210(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [7]
+2020-04-13 16:56:41,254(yyyy-mm-dd hh:mm:ss a) [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:56:41,545(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_, usermodel0_.first_name as first_na2_0_, usermodel0_.last_name as last_nam3_0_ from UserRegister usermodel0_
+2020-04-13 16:56:41,548(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [1]
+2020-04-13 16:56:41,550(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:56:41,550(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:56:41,551(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [2]
+2020-04-13 16:56:41,551(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:56:41,551(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:56:41,551(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [3]
+2020-04-13 16:56:41,551(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:56:41,552(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:56:41,552(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [4]
+2020-04-13 16:56:41,552(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:56:41,552(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:56:41,552(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [5]
+2020-04-13 16:56:41,553(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:56:41,553(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:56:41,553(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [6]
+2020-04-13 16:56:41,553(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:56:41,553(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:56:41,554(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [7]
+2020-04-13 16:56:41,554(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:56:41,554(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:57:29,878(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:57:29,895(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:57:29,971(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:57:29,974(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:57:29,975(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:57:29,975(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [8]
+2020-04-13 16:57:30,308(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:57:30,310(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:57:30,357(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:57:30,358(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:57:30,358(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:57:30,359(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [9]
+2020-04-13 16:57:30,695(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:57:30,701(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:57:30,803(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:57:30,804(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:57:30,804(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:57:30,805(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [10]
+2020-04-13 16:57:30,848(yyyy-mm-dd hh:mm:ss a) [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:57:31,174(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_, usermodel0_.first_name as first_na2_0_, usermodel0_.last_name as last_nam3_0_ from UserRegister usermodel0_
+2020-04-13 16:57:31,177(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [1]
+2020-04-13 16:57:31,180(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:57:31,180(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:57:31,180(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [2]
+2020-04-13 16:57:31,181(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:57:31,181(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:57:31,181(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [3]
+2020-04-13 16:57:31,182(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:57:31,182(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:57:31,182(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [4]
+2020-04-13 16:57:31,182(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:57:31,183(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:57:31,183(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [5]
+2020-04-13 16:57:31,183(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:57:31,183(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:57:31,183(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [6]
+2020-04-13 16:57:31,184(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:57:31,184(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:57:31,184(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [7]
+2020-04-13 16:57:31,184(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:57:31,185(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:57:31,185(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [8]
+2020-04-13 16:57:31,185(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:57:31,185(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:57:31,185(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [9]
+2020-04-13 16:57:31,186(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:57:31,186(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:57:31,186(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [10]
+2020-04-13 16:57:31,187(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:57:31,187(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:57:31,425(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_0_, usermodel0_.first_name as first_na2_0_0_, usermodel0_.last_name as last_nam3_0_0_ from UserRegister usermodel0_ where usermodel0_.id=?
+2020-04-13 16:57:31,425(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [8]
+2020-04-13 16:57:31,436(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:57:31,437(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:57:31,446(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update UserRegister set first_name=?, last_name=? where id=?
+2020-04-13 16:57:31,447(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [opop]
+2020-04-13 16:57:31,448(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:57:31,449(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [8]
+2020-04-13 16:58:04,841(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:58:04,866(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:58:04,960(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:58:04,966(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:58:04,966(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:58:04,967(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [11]
+2020-04-13 16:58:05,333(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:58:05,334(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:58:05,387(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:58:05,388(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:58:05,388(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:58:05,388(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [12]
+2020-04-13 16:58:05,636(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:58:05,638(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:58:05,689(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:58:05,691(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:58:05,692(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:58:05,692(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [13]
+2020-04-13 16:58:05,743(yyyy-mm-dd hh:mm:ss a) [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:58:06,034(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_, usermodel0_.first_name as first_na2_0_, usermodel0_.last_name as last_nam3_0_ from UserRegister usermodel0_
+2020-04-13 16:58:06,038(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [1]
+2020-04-13 16:58:06,041(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:58:06,041(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:58:06,042(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [2]
+2020-04-13 16:58:06,042(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:58:06,042(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:58:06,042(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [3]
+2020-04-13 16:58:06,042(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:58:06,043(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:58:06,043(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [4]
+2020-04-13 16:58:06,043(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:58:06,043(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:58:06,044(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [5]
+2020-04-13 16:58:06,044(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:58:06,044(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:58:06,044(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [6]
+2020-04-13 16:58:06,045(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:58:06,045(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:58:06,045(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [7]
+2020-04-13 16:58:06,046(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:58:06,046(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:58:06,046(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [8]
+2020-04-13 16:58:06,046(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [opop]
+2020-04-13 16:58:06,047(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:58:06,047(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [9]
+2020-04-13 16:58:06,047(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:58:06,047(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:58:06,048(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [10]
+2020-04-13 16:58:06,048(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:58:06,048(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:58:06,048(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [11]
+2020-04-13 16:58:06,049(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:58:06,049(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:58:06,049(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [12]
+2020-04-13 16:58:06,050(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:58:06,050(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:58:06,051(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [13]
+2020-04-13 16:58:06,051(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:58:06,051(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:58:06,223(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_0_, usermodel0_.first_name as first_na2_0_0_, usermodel0_.last_name as last_nam3_0_0_ from UserRegister usermodel0_ where usermodel0_.id=?
+2020-04-13 16:58:06,224(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [11]
+2020-04-13 16:58:06,230(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:58:06,230(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:58:06,234(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update UserRegister set first_name=?, last_name=? where id=?
+2020-04-13 16:58:06,234(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [opop]
+2020-04-13 16:58:06,235(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:58:06,235(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [11]
+2020-04-13 16:58:06,421(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_0_, usermodel0_.first_name as first_na2_0_0_, usermodel0_.last_name as last_nam3_0_0_ from UserRegister usermodel0_ where usermodel0_.id=?
+2020-04-13 16:58:06,422(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [2]
+2020-04-13 16:58:06,423(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:58:06,423(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:58:06,430(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -delete from UserRegister where id=?
+2020-04-13 16:58:06,430(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [2]
+2020-04-13 16:59:22,449(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:59:22,466(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:59:22,566(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:59:22,571(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:59:22,571(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:59:22,572(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [14]
+2020-04-13 16:59:22,825(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:59:22,828(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:59:22,877(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:59:22,878(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:59:22,878(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:59:22,878(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [15]
+2020-04-13 16:59:23,097(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:59:23,098(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:59:23,144(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:59:23,144(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:59:23,145(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:59:23,145(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [16]
+2020-04-13 16:59:23,280(yyyy-mm-dd hh:mm:ss a) [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:59:23,591(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_, usermodel0_.first_name as first_na2_0_, usermodel0_.last_name as last_nam3_0_ from UserRegister usermodel0_
+2020-04-13 16:59:23,594(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [1]
+2020-04-13 16:59:23,597(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:23,597(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:23,598(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [3]
+2020-04-13 16:59:23,598(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:23,598(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:23,598(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [4]
+2020-04-13 16:59:23,599(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:23,599(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:23,599(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [5]
+2020-04-13 16:59:23,599(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:59:23,600(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:23,600(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [6]
+2020-04-13 16:59:23,600(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:23,601(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:23,601(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [7]
+2020-04-13 16:59:23,601(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:23,601(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:23,602(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [8]
+2020-04-13 16:59:23,602(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [opop]
+2020-04-13 16:59:23,602(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:23,602(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [9]
+2020-04-13 16:59:23,603(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:23,603(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:23,603(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [10]
+2020-04-13 16:59:23,604(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:23,604(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:23,604(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [11]
+2020-04-13 16:59:23,604(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [opop]
+2020-04-13 16:59:23,604(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:23,605(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [12]
+2020-04-13 16:59:23,605(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:23,605(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:23,605(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [13]
+2020-04-13 16:59:23,606(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:23,606(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:23,607(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [14]
+2020-04-13 16:59:23,607(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:59:23,607(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:23,607(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [15]
+2020-04-13 16:59:23,607(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:23,608(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:23,608(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [16]
+2020-04-13 16:59:23,608(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:23,608(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:23,760(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_0_, usermodel0_.first_name as first_na2_0_0_, usermodel0_.last_name as last_nam3_0_0_ from UserRegister usermodel0_ where usermodel0_.id=?
+2020-04-13 16:59:23,761(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [14]
+2020-04-13 16:59:23,765(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:59:23,765(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:23,768(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -update UserRegister set first_name=?, last_name=? where id=?
+2020-04-13 16:59:23,769(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [opop]
+2020-04-13 16:59:23,769(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:59:23,769(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [14]
+2020-04-13 16:59:23,958(yyyy-mm-dd hh:mm:ss a) [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_0_, usermodel0_.first_name as first_na2_0_0_, usermodel0_.last_name as last_nam3_0_0_ from UserRegister usermodel0_ where usermodel0_.id=?
+2020-04-13 16:59:23,959(yyyy-mm-dd hh:mm:ss a) [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [2]
+2020-04-13 16:59:54,723 [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:59:54,779 [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:59:54,865 [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:59:54,877 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Zara]
+2020-04-13 16:59:54,878 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:59:54,879 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [17]
+2020-04-13 16:59:55,194 [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:59:55,196 [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:59:55,240 [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:59:55,241 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [Daisy]
+2020-04-13 16:59:55,242 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Das]
+2020-04-13 16:59:55,243 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [18]
+2020-04-13 16:59:55,464 [main] DEBUG org.hibernate.SQL -select next_val as id_val from hibernate_sequence for update
+2020-04-13 16:59:55,465 [main] DEBUG org.hibernate.SQL -update hibernate_sequence set next_val= ? where next_val=?
+2020-04-13 16:59:55,505 [main] DEBUG org.hibernate.SQL -insert into UserRegister (first_name, last_name, id) values (?, ?, ?)
+2020-04-13 16:59:55,506 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [John]
+2020-04-13 16:59:55,506 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Paul]
+2020-04-13 16:59:55,506 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [19]
+2020-04-13 16:59:55,585 [main] INFO  com.savan.main.UserRegisterMain -success...
+2020-04-13 16:59:55,975 [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_, usermodel0_.first_name as first_na2_0_, usermodel0_.last_name as last_nam3_0_ from UserRegister usermodel0_
+2020-04-13 16:59:55,978 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [1]
+2020-04-13 16:59:55,981 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:55,982 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:55,982 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [3]
+2020-04-13 16:59:55,983 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:55,983 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:55,983 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [4]
+2020-04-13 16:59:55,984 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:55,984 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:55,984 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [5]
+2020-04-13 16:59:55,984 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:59:55,985 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:55,985 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [6]
+2020-04-13 16:59:55,985 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:55,985 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:55,986 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [7]
+2020-04-13 16:59:55,986 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:55,986 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:55,986 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [8]
+2020-04-13 16:59:55,987 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [opop]
+2020-04-13 16:59:55,987 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:55,987 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [9]
+2020-04-13 16:59:55,988 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:55,988 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:55,988 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [10]
+2020-04-13 16:59:55,989 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:55,989 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:55,989 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [11]
+2020-04-13 16:59:55,990 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [opop]
+2020-04-13 16:59:55,990 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:55,990 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [12]
+2020-04-13 16:59:55,990 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:55,990 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:55,991 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [13]
+2020-04-13 16:59:55,991 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:55,992 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:55,992 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [14]
+2020-04-13 16:59:55,992 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [opop]
+2020-04-13 16:59:55,992 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:55,992 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [15]
+2020-04-13 16:59:55,993 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:55,993 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:55,993 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [16]
+2020-04-13 16:59:55,993 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:55,993 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:55,993 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [17]
+2020-04-13 16:59:55,993 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:59:55,994 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:55,994 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [18]
+2020-04-13 16:59:55,994 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [Daisy]
+2020-04-13 16:59:55,994 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Das]
+2020-04-13 16:59:55,994 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([id1_0_] : [INTEGER]) - [19]
+2020-04-13 16:59:55,994 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_] : [VARCHAR]) - [John]
+2020-04-13 16:59:55,995 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_] : [VARCHAR]) - [Paul]
+2020-04-13 16:59:56,200 [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_0_, usermodel0_.first_name as first_na2_0_0_, usermodel0_.last_name as last_nam3_0_0_ from UserRegister usermodel0_ where usermodel0_.id=?
+2020-04-13 16:59:56,200 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [17]
+2020-04-13 16:59:56,209 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([first_na2_0_0_] : [VARCHAR]) - [Zara]
+2020-04-13 16:59:56,209 [main] TRACE org.hibernate.type.descriptor.sql.BasicExtractor -extracted value ([last_nam3_0_0_] : [VARCHAR]) - [Ali]
+2020-04-13 16:59:56,213 [main] DEBUG org.hibernate.SQL -update UserRegister set first_name=?, last_name=? where id=?
+2020-04-13 16:59:56,213 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [VARCHAR] - [opop]
+2020-04-13 16:59:56,214 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [2] as [VARCHAR] - [Ali]
+2020-04-13 16:59:56,214 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [3] as [INTEGER] - [17]
+2020-04-13 16:59:56,383 [main] DEBUG org.hibernate.SQL -select usermodel0_.id as id1_0_0_, usermodel0_.first_name as first_na2_0_0_, usermodel0_.last_name as last_nam3_0_0_ from UserRegister usermodel0_ where usermodel0_.id=?
+2020-04-13 16:59:56,384 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [2]

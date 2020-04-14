@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+	<class name="com.savan.model.Txn" table="Transaction" >
+	  
+	 	<id name="id" type="long" column="txn_id" >
+	 		<generator class="identity"></generator>
+	 	</id>
+	 
+	 	<property name="date" type="date" column="date"></property>
+	 	<property name="total" type="double" column="total"></property>
+
+		<one-to-one name="customer" class="com.savan.model.Customer" cascade="save-update" />
+		 
+	</class>
+
+</hibernate-mapping>

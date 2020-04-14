@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+	<class name="com.savan.model.Items" table="Items" >
+	
+		<id name="id" type="long" column="id" >
+			<generator class="identity"></generator>
+		</id>
+	
+		<property name="itemId" type="string" column="item_id"></property>
+		<property name="itemTotal" type="double" column="item_total"></property>
+		<property name="quantity" type="integer" column="quantity"></property>
+		
+		<many-to-one name="cart" class="com.savan.model.Cart" column="cart_id" not-null="true" ></many-to-one>
+	
+	</class>
+
+</hibernate-mapping>
